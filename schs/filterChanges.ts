@@ -1,5 +1,5 @@
-import hash from '../_lib/hash'
-import log from '../_lib/log'
+import hash from '../_lib/hash.ts'
+import log from '../_lib/log.ts'
 export default {
     type: 'array',
     items: [hash, log]

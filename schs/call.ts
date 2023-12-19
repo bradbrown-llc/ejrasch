@@ -1,1 +1,1 @@
-export { default } from '../_lib/data'
+export { default } from '../_lib/data.ts'

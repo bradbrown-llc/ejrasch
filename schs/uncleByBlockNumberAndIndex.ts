@@ -1,5 +1,5 @@
-import pendingBlock from '../_lib/pendingBlock'
-import block from '../_lib/block'
+import pendingBlock from '../_lib/pendingBlock.ts'
+import block from '../_lib/block.ts'
 export default {
     any: [
         { type: 'null' },

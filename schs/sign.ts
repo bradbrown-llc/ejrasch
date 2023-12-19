@@ -1,1 +1,1 @@
-export { default } from '../_lib/hash'
+export { default } from '../_lib/hash.ts'

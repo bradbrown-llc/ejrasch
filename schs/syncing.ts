@@ -1,4 +1,4 @@
-import quantity from '../_lib/quantity'
+import quantity from '../_lib/quantity.ts'
 export default {
     any: [
         { type: 'boolean' },

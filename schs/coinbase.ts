@@ -1,1 +1,1 @@
-export { default } from '../_lib/address'
+export { default } from '../_lib/address.ts'

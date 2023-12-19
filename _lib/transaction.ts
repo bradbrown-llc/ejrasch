@@ -1,7 +1,7 @@
-import hash from './hash'
-import data from './data'
-import address from './address'
-import quantity from './quantity'
+import hash from './hash.ts'
+import data from './data.ts'
+import address from './address.ts'
+import quantity from './quantity.ts'
 const nsch = { type: 'null' } as const
 export default {
     type: 'object',

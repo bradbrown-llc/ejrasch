@@ -2,6 +2,7 @@ import hash from './hash.ts'
 import data from './data.ts'
 import address from './address.ts'
 import quantity from './quantity.ts'
+import transaction from './transaction.ts'
 const nsch = { type: 'null' } as const
 export default {
     type: 'object',
@@ -9,7 +10,7 @@ export default {
         number: { any: [nsch, quantity] },
         hash: { any: [nsch, hash] },
         parentHash: hash,
-        nonce: { any: [nsch, data] },
+        nonce: { any: [nsch, quantity] },
         sha3Uncles: hash,
         logsBloom: { any: [nsch, data] },
         transactionsRoot: hash,
@@ -23,7 +24,7 @@ export default {
         gasLimit: quantity,
         gasUsed: quantity,
         timestamp: quantity,
-        transactions: { type: 'null' },
+        transactions: { type: 'array', items: [transaction, hash] },
         uncles: { type: 'array', items: [hash] }
     }
 } satisfies Sch
